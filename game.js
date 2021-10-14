@@ -42,7 +42,8 @@ function enemyHeal() {
 }
 
 function healing() {
-    health++
+    health += 20
+    update()
 }
 
 function update() {
