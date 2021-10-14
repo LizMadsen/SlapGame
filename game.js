@@ -37,9 +37,15 @@ function attack(atkChoice) {
     update()
 }
 
+function enemyHeal() {
+    health += 20
+}
+
 function update() {
     let btnElem = document.getElementById('health').innerText = health.toString()
     document.getElementById('hits').innerText = hits.toString()
+    setInterval(enemyHeal, 5000)
+    console.log(enemyHeal)
 }
 
 update()

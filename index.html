@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="text-center">
         <span>
             <p><B>Health:</B> <span id="health">--</p>
             <P><b>Target Name: </b> Frank</p>
@@ -21,14 +21,19 @@
         </span>
     </header>
     <main>
-        <img class="slapImg rounded"
-            src="https://play-lh.googleusercontent.com/y-jGBQYt9_MwlJJnoCODI-n1rmo138BkMCZShWOQtczg53QkwYmTtyfkcSqUwadIpFFb"
-            alt="">
+        <div class="row">
+            <div class="col">
+                <center><img class="slapImg" src="https://i.imgur.com/nSoP4pC.png" alt=""></center>
+            </div>
+        </div>
+        <div class="col buttonClass justify-content-center m-2">
+            <button class=" btn btn-primary" id="slap" onclick="attack('punch')">Punch!</button>
+            <button class="btn btn-primary" id="slap" onclick="attack('sword')">Sword!</button>
+            <button class="btn btn-primary" id="slap" onclick="attack('mace')">Mace!</button>
+        </div>
     </main>
-    <footer>
-        <button class="btn btn-primary" id="slap" onclick="attack('punch')">Punch!</button>
-        <button class="btn btn-primary" id="slap" onclick="attack('sword')">Sword!</button>
-        <button class="btn btn-primary" id="slap" onclick="attack('mace')">Mace!</button>
+    <footer class="container-fluid">
+        <p class="text-center">Coded by Ethan & Liz</p>
     </footer>
     <script src="game.js"></script>
 </body>
